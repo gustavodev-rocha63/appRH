@@ -16,6 +16,9 @@
         private long id;
 
         @Column(nullable = false)
+        private long codigo;
+
+        @Column(nullable = false)
         private String name;
 
         @Column(nullable = false)
@@ -59,6 +62,14 @@
 
         public void setWage(BigDecimal wage) {
             this.wage = wage;
+        }
+
+        public long getCodigo(){
+            return codigo;
+        }
+
+        public void setCodigo(long codigo){
+            this.codigo = codigo;
         }
 
         public @NotEmpty String getDescription() {
