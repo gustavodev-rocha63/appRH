@@ -23,6 +23,14 @@
                 @JoinColumn(name = "vacancy_id")
                 private Vacancy vacancy;
 
+                public Vacancy getVacancy(){
+                    return vacancy;
+                }
+
+                public void setVacancy(Vacancy vacancy){
+                    this.vacancy = vacancy;
+                }
+
                 public void setId(Long id){
                     this.id = id;
                 }

@@ -30,6 +30,9 @@
         @Column(nullable = false)
         private BigDecimal wage;
 
+        @Column(nullable = false)
+        private String vacancy;
+
         @OneToMany(mappedBy = "vacancy")
         private List<Candidates> candidates;
 
