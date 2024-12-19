@@ -13,7 +13,7 @@
                 @Column(unique = true)
                 private String rg;
 
-                @NotEmpty
+                @Column(unique = true)
                 private String nameCandidate;
 
                 @NotEmpty
